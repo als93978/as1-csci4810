@@ -1,0 +1,17 @@
+#include <iostream>
+#include <GLFW/glfw3.h>
+
+using namespace std;
+
+int main() {
+    if(!glfwInit()) {
+        cout << "GLFW initialization failed" << endl;
+        return 0;
+    }
+    
+    cout << "GLFW!" << endl;
+
+    glfwTerminate();
+    
+    return 0;
+}
