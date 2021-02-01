@@ -25,7 +25,11 @@ void drawPixel(int x, int y) {
 void draw() {
     glClear(GL_COLOR_BUFFER_BIT);
     
-    drawPixel(0, 0);
+    for(int i = 0; i < 100; i++) {
+        for(int j = 0; j < 100; j++) {
+            drawPixel(i, j);
+        }
+    }
     
     glFlush();
 }
