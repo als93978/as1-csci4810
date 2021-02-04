@@ -9,6 +9,7 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 
 void drawPixel(int x, int y);
 void draw();
+void drawLineBasic(int x0, int y0, int x1, int y1);
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
     glViewport(0, 0, width, height);
@@ -24,14 +25,32 @@ void drawPixel(int x, int y) {
 
 void draw() {
     glClear(GL_COLOR_BUFFER_BIT);
-    
-    for(int i = 0; i < 100; i++) {
-        for(int j = 0; j < 100; j++) {
-            drawPixel(i, j);
-        }
-    }
+
+    //drawLineBasic(200, 100, 400, 200);
+    //drawLineBasic(300, 200, 400, 300);
+    //drawLineBasic(4, 2, 8, 4);
+    //drawLineBasic(100, 200, 200, 400);
+    drawLineBasic(2, 4, 4, 8);
+    //drawLineBasic(0, 0, 8, 4);
     
     glFlush();
+}
+
+void drawLineBasic(int x0, int y0, int x1, int y1) {
+    float deltaX = x1 - x0;
+    cout << "deltaX: " << deltaX << endl;
+    float deltaY = y1 - y0;
+    cout << "deltaY: " << deltaY << endl;
+    float slope = deltaY / deltaX;
+    cout << "slope: " << slope << endl;
+
+    for(int i = 0; i < deltaY; i++) {
+	int x = x0 + i;
+	cout << "x: " << x << endl;
+	int y = slope * i + y0;
+	cout << "y: " << y << endl;
+	drawPixel(x, y);
+    }
 }
 
 int main() {
