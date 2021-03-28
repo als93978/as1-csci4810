@@ -79,15 +79,15 @@ void draw(vector<Line> lines) {
 
     // auto t1 = chrono::high_resolution_clock::now();
     
-    // for(int i = 0; i < lines.size(); i++) {
-    // 	Line currentLine = lines.at(i);
+    for(int i = 0; i < lines.size(); i++) {
+    	Line currentLine = lines.at(i);
 
-    //     // drawLineBasic(currentLine.x0, currentLine.y0,
-    // 	// 	      currentLine.x1, currentLine.y1);
+        drawLineBasic(currentLine.x0, currentLine.y0,
+    		      currentLine.x1, currentLine.y1);
         
-    // 	// drawLineBresenham(currentLine.x0, currentLine.y0,
-    // 	// 		  currentLine.x1, currentLine.y1);
-    // }
+    	// drawLineBresenham(currentLine.x0, currentLine.y0,
+    	// 		  currentLine.x1, currentLine.y1);
+    }
 
     // auto t2 = chrono::high_resolution_clock::now();
 
@@ -99,54 +99,54 @@ void draw(vector<Line> lines) {
     // drawLineBresenham(10, 5, 3, 8);
     // drawLineBresenham(0, 0, -10, 5);
     
-    // Octant Test:
-    // drawLineBasic(0 + 400, 0 + 300, (10 * 20) + 400, (5 * 20) + 300);
-    // //drawLineBresenham(0 + 400, 0 + 300, (10 * 20) + 400, (5 * 20) + 300);
+    // // Octant Test:
+    // //drawLineBasic(0 + 400, 0 + 300, (10 * 20) + 400, (5 * 20) + 300);
+    // drawLineBresenham(0 + 400, 0 + 300, (10 * 20) + 400, (5 * 20) + 300);
 
-    // drawLineBasic(0 + 400, 0 + 300, (8 * 20) + 400, (8 * 20) + 300);
-    // //drawLineBresenham(0 + 400, 0 + 300, (8 * 20) + 400, (8 * 20) + 300);
+    // //drawLineBasic(0 + 400, 0 + 300, (8 * 20) + 400, (8 * 20) + 300);
+    // drawLineBresenham(0 + 400, 0 + 300, (8 * 20) + 400, (8 * 20) + 300);
     
-    // drawLineBasic(0 + 400, 0 + 300, (5 * 20) + 400, (10 * 20) + 300);
-    // //drawLineBresenham(0 + 400, 0 + 300, (5 * 20) + 400, (10 * 20) + 300);
+    // //drawLineBasic(0 + 400, 0 + 300, (5 * 20) + 400, (10 * 20) + 300);
+    // drawLineBresenham(0 + 400, 0 + 300, (5 * 20) + 400, (10 * 20) + 300);
 
-    // drawLineBasic(0 + 400, 0 + 300, (-5 * 20) + 400, (10 * 20) + 300);
-    // //drawLineBresenham(0 + 400, 0 + 300, (-5 * 20) + 400, (10 * 20) + 300);
+    // //drawLineBasic(0 + 400, 0 + 300, (-5 * 20) + 400, (10 * 20) + 300);
+    // drawLineBresenham(0 + 400, 0 + 300, (-5 * 20) + 400, (10 * 20) + 300);
 
-    // drawLineBasic(0 + 400, 0 + 300, (-8 * 20) + 400, (8 * 20) + 300);
-    // //drawLineBresenham(0 + 400, 0 + 300, (-8 * 20) + 400, (8 * 20) + 300);
+    // //drawLineBasic(0 + 400, 0 + 300, (-8 * 20) + 400, (8 * 20) + 300);
+    // drawLineBresenham(0 + 400, 0 + 300, (-8 * 20) + 400, (8 * 20) + 300);
+   
+    // //drawLineBasic(0 + 400, 0 + 300, (-10 * 20) + 400, (5 * 20) + 300);
+    // drawLineBresenham(0 + 400, 0 + 300, (-10 * 20) + 400, (5 * 20) + 300);
+
+    // //drawLineBasic(0 + 400, 0 + 300, (-10 * 20) + 400, (-5 * 20) + 300);
+    // drawLineBresenham(0 + 400, 0 + 300, (-10 * 20) + 400, (-5 * 20) + 300);
+
+    // //drawLineBasic(0 + 400, 0 + 300, (-8 * 20) + 400, (-8 * 20) + 300);
+    // drawLineBresenham(0 + 400, 0 + 300, (-8 * 20) + 400, (-8 * 20) + 300);
     
-    // drawLineBasic(0 + 400, 0 + 300, (-10 * 20) + 400, (5 * 20) + 300);
-    // //drawLineBresenham(0 + 400, 0 + 300, (-10 * 20) + 400, (5 * 20) + 300);
+    // //drawLineBasic(0 + 400, 0 + 300, (-5 * 20) + 400, (-10 * 20) + 300);
+    // drawLineBresenham(0 + 400, 0 + 300, (-5 * 20) + 400, (-10 * 20) + 300);
 
-    // drawLineBasic(0 + 400, 0 + 300, (-10 * 20) + 400, (-5 * 20) + 300);
-    // //drawLineBresenham(0 + 400, 0 + 300, (-10 * 20) + 400, (-5 * 20) + 300);
+    // //drawLineBasic(0 + 400, 0 + 300, (5 * 20) + 400, (-10 * 20) + 300);
+    // drawLineBresenham(0 + 400, 0 + 300, (5 * 20) + 400, (-10 * 20) + 300);
 
-    // drawLineBasic(0 + 400, 0 + 300, (-8 * 20) + 400, (-8 * 20) + 300);
-    // //drawLineBresenham(0 + 400, 0 + 300, (-8 * 20) + 400, (-8 * 20) + 300);
+    // //drawLineBasic(0 + 400, 0 + 300, (8 * 20) + 400, (-8 * 20) + 300);
+    // drawLineBresenham(0 + 400, 0 + 300, (8 * 20) + 400, (-8 * 20) + 300);
     
-    // drawLineBasic(0 + 400, 0 + 300, (-5 * 20) + 400, (-10 * 20) + 300);
-    // //drawLineBresenham(0 + 400, 0 + 300, (-5 * 20) + 400, (-10 * 20) + 300);
+    // //drawLineBasic(0 + 400, 0 + 300, (10 * 20) + 400, (-5 * 20) + 300);
+    // drawLineBresenham(0 + 400, 0 + 300, (10 * 20) + 400, (-5 * 20) + 300);
 
-    // drawLineBasic(0 + 400, 0 + 300, (5 * 20) + 400, (-10 * 20) + 300);
-    // //drawLineBresenham(0 + 400, 0 + 300, (5 * 20) + 400, (-10 * 20) + 300);
+    // //drawLineBasic(0 + 400, 0 + 300, (0 * 20) + 400, (10 * 20) + 300);
+    // drawLineBresenham(0 + 400, 0 + 300, (0 * 20) + 400, (10 * 20) + 300);
 
-    // drawLineBasic(0 + 400, 0 + 300, (8 * 20) + 400, (-8 * 20) + 300);
-    // //drawLineBresenham(0 + 400, 0 + 300, (8 * 20) + 400, (-8 * 20) + 300);
-    
-    // drawLineBasic(0 + 400, 0 + 300, (10 * 20) + 400, (-5 * 20) + 300);
-    // //drawLineBresenham(0 + 400, 0 + 300, (10 * 20) + 400, (-5 * 20) + 300);
+    // //drawLineBasic(0 + 400, 0 + 300, (0 * 20) + 400, (-10 * 20) + 300);
+    // drawLineBresenham(0 + 400, 0 + 300, (0 * 20) + 400, (-10 * 20) + 300);
 
-    // drawLineBasic(0 + 400, 0 + 300, (0 * 20) + 400, (10 * 20) + 300);
-    // //drawLineBresenham(0 + 400, 0 + 300, (0 * 20) + 400, (10 * 20) + 300);
+    // //drawLineBasic(0 + 400, 0 + 300, (10 * 20) + 400, (0 * 20) + 300);
+    // drawLineBresenham(0 + 400, 0 + 300, (10 * 20) + 400, (0 * 20) + 300);
 
-    // drawLineBasic(0 + 400, 0 + 300, (0 * 20) + 400, (-10 * 20) + 300);
-    // //drawLineBresenham(0 + 400, 0 + 300, (0 * 20) + 400, (-10 * 20) + 300);
-
-    // drawLineBasic(0 + 400, 0 + 300, (10 * 20) + 400, (0 * 20) + 300);
-    // //drawLineBresenham(0 + 400, 0 + 300, (10 * 20) + 400, (0 * 20) + 300);
-
-    // drawLineBasic(0 + 400, 0 + 300, (-10 * 20) + 400, (0 * 20) + 300);
-    // //drawLineBresenham(0 + 400, 0 + 300, (-10 * 20) + 400, (0 * 20) + 300);
+    // //drawLineBasic(0 + 400, 0 + 300, (-10 * 20) + 400, (0 * 20) + 300);
+    // drawLineBresenham(0 + 400, 0 + 300, (-10 * 20) + 400, (0 * 20) + 300);
 
     // From assignment PDF
     //drawLineBasic(10, 10, 30, 10);
